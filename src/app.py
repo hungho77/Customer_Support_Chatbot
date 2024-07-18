@@ -10,7 +10,7 @@ st.title("💬 Customer Support Chatbot ")
 st.caption("🚀 A customer support chatbot powered by Hung Ho ")
 
 if "session_id" not in st.session_state:
-    st.session_state.session_id = uuid.uuid4()
+    st.session_state.session_id = uuid.uuid4().hex
 
 # Initialise session state variables
 if "messages" not in st.session_state:
@@ -25,7 +25,7 @@ if prompt := st.chat_input():
     st.session_state.messages.append({"role": "user", "content": prompt})
     st.chat_message("user").write(prompt)
 
-    response = generate_anwser(conversational_rag_chain, prompt, st.session_state.session_id.hex)
+    response = generate_anwser(conversational_rag_chain, prompt, st.session_state.session_id)
 
 
     st.session_state.messages.append({"role": "assistant", "content": response})

@@ -6,7 +6,7 @@ sys.path.append("../")
 
 from model import embeddings
 from qdrant_client import QdrantClient
-from langchain_community.vectorstores import Qdrant
+from langchain_qdrant import Qdrant
 
 from config import QDRANT_HOST, QDRANT_PORT, DOCUMENT_PATHS
 
