@@ -4,7 +4,7 @@ import uuid
 from conversational_rag import generate_anwser, conversational_rag_chain
 
 # Setting page title and header
-st.set_page_config(page_title="Pre-test Zalo", page_icon=":robot_face:")
+st.set_page_config(page_title="Emergency Chatbot", page_icon=":robot_face:")
 
 st.title("💬 Customer Support Chatbot ")
 st.caption("🚀 A customer support chatbot powered by Hung Ho ")
@@ -15,7 +15,7 @@ if "session_id" not in st.session_state:
 # Initialise session state variables
 if "messages" not in st.session_state:
     st.session_state["messages"] = [
-        {"role": "assistant", "content": "Xin chào, tôi có thể giúp gì cho bạn?"}
+        {"role": "assistant", "content": "Hi, Can i help you"}
     ]
 
 for msg in st.session_state.messages:

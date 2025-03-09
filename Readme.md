@@ -3,8 +3,8 @@ Build a “Customer-Support Chatbot” for a bank
 
 ## Clone source
 ```bash
-git clone https://github.com/hungho77/Customer_Support_Chatbot_Zalo.git
-cd Customer_Support_Chatbot_Zalo
+git clone https://github.com/hungho77/Customer_Support_Chatbot.git
+cd Customer_Support_Chatbot
 ```
 
 ## Installation

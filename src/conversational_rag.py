@@ -47,11 +47,10 @@ def build_conversational_rag_chain():
 
     ### Answer question ###
     system_prompt = (
-        "You are an assistant for question-answering tasks. "
+        "You are an assistant for automation updating feature deadline, due date, status. "
         "Use the given context to answer the question. "
         "If you don't know the answer, say you don't know. "
         "Use five sentence maximum and keep the answer concise. "
-        "Tất cả câu trả lời bằng Tiếng Việt."
         "Context: {context}"
     )
     
