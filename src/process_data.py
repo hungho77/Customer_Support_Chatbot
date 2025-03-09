@@ -1,6 +1,6 @@
 import json 
 import csv
-json_path=('/home/lybui/Desktop/Work/Customer_Support_Chatbot/data/vcb/jira_data_1741318923069.json')
+json_path=('path')
 
 with open(json_path, 'r') as j:
     contents = json.loads(j.read())

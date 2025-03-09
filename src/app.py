@@ -4,7 +4,7 @@ import uuid
 from conversational_rag import generate_anwser, conversational_rag_chain
 
 # Setting page title and header
-st.set_page_config(page_title="Emergency Chatbot", page_icon=":robot_face:")
+st.set_page_config(page_title="Automation Chatbot", page_icon=":robot_face:")
 
 st.title("💬 Customer Support Chatbot ")
 st.caption("🚀 A customer support chatbot powered by Hung Ho ")
